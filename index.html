@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portal RPL SMKN 9 Medan - Responsive Layout</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="bg-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcqpVyQ8qDcnE0HkG2N33NmPEe6YgVJgWPgTZrvL8EkH2PR_aatThof7M&s=10" alt="">
+
+    <div class="page-wrapper">
+      <!-- HEADER -->
+      <header class="header" id="header">
+        <div class="logo"><img src="smk.png" alt="Logo RPL"><img src="rpl.png" alt="Logo RPL">RPL SMKN 9 MEDAN</div>
+    <nav class="nav-links">
+           <a href="#beranda">Beranda</a>
+           <a href="#kurikulum">Kurikulum</a>
+           <a href="#karya-siswa">Karya Siswa</a>
+           <a href="#kontak">Kontak</a>
+       </nav>
+       <button class="hamburger-btn" id="tombolMenu" aria-label="Menu">&#9776;</button>
+    </header>
+     <!-- SIDEBAR KIRI (Dihilangkan di Smartphone) -->
+        <aside class="sidebar-kiri">
+        <h3>Menu Cepat</h3>
+        <ul>
+           <li>Jadwal Praktikum</li>
+           <li>Modul Pemrograman Web</li>
+           <li>Daftar Lab RPL</li>
+           <li>Info PKL & LSP</li>
+        </ul>
+     </aside>
+     <!-- CHATBOT (di bawah Menu Cepat) -->
+     <aside class="chatbot" aria-label="Asisten SMKN 9 Medan">
+        <h3>Tanya SMKN 9 Medan</h3>
+        <div class="chat-pesan" id="chatPesan" aria-live="polite"></div>
+        <div class="chat-saran" id="chatSaran"></div>
+        <form class="chat-form" id="chatForm">
+            <input type="text" id="chatInput" placeholder="Tulis pertanyaan..." autocomplete="off" maxlength="200" aria-label="Pertanyaan">
+            <button type="submit" aria-label="Kirim">&#10148;</button>
+        </form>
+     </aside>
+     <!-- KONTEN UTAMA -->
+     <main class="konten-utama">
+
+       <!-- LAYER 1: BERANDA -->
+       <section class="layer" id="beranda">
+           <h2>Berita & Proyek Terbaru Kelas XII RPL</h2>
+           <div class="card-grid">
+           <article class="card">
+           <img src="https://www.soltius.co.id/site/uploads/images/640a9b4dbab17-mengapa-bisnis-harus-menggunakan-barcode-untuk-barang-inventaris.jpg" alt="Aplikasi Inventaris QR">
+           <h4>Aplikasi Inventaris QR</h4>
+           <p>Sistem peminjaman alat laboratorium berbasis web responsif dengan pemindai QR Code.</p>
+       </article>
+       <article class="card">
+           <img src="https://portal.saicponorogo.com/upload/sampul/1778900703-DSC02728_1.jpg" alt="Portal CBT Online">
+           <h4>Portal CBT Online</h4>
+           <p>Platform ujian berbasis komputer yang adaptif pada desktop lab maupun smartphone.</p>
+       </article>
+       <article class="card">
+           <img src="https://bantuan.inaproc.id/hc/article_attachments/14787120256655" alt="E-Katalog Produk PKK">
+           <h4>E-Katalog Produk PKK</h4>
+           <p>Etalase digital karya kreatif siswa jurusan Rekayasa Perangkat Lunak.</p>
+       </article>
+       <!-- 3 KARTU BARU (Tantangan 1) -->
+       <article class="card">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8IS_aOtrpwU_3UFOkaiDGPoML2P9Ozw4XWyAaHVUTw&s=10" alt="Sistem Absensi Pengenalan Wajah">
+           <h4>Sistem Absensi Pengenalan Wajah</h4>
+           <p>Aplikasi presensi siswa real-time menggunakan kamera webcam dan kecerdasan buatan.</p>
+       </article>
+       <article class="card">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAksEpbQkakRV_blWlBpn9OhbOskW6H1Ufcqx7uHEi1Sa0__Z70_8bZbo&s=10" alt="Perpustakaan Digital RPL">
+           <h4>Perpustakaan Digital RPL</h4>
+           <p>Katalog peminjaman buku dan modul pembelajaran pemrograman berbasis cloud.</p>
+       </article>
+       <article class="card">
+           <img src="https://i0.wp.com/bisaioti.com/wp-content/uploads/2025/05/internet-og-things.jpg?resize=631%2C470&ssl=1" alt="Monitoring Suhu Lab IoT">
+           <h4>Monitoring Suhu Lab IoT</h4>
+           <p>Dashboard pemantauan suhu dan kelembapan ruang server RPL secara otomatis.</p>
+       </article>
+       </div>
+       </section>
+
+       <!-- LAYER 2: KURIKULUM -->
+       <section class="layer" id="kurikulum">
+           <h2>Kurikulum Jurusan RPL</h2>
+           <p class="intro">Gambaran materi yang dipelajari siswa Rekayasa Perangkat Lunak dari kelas X sampai kelas XII.</p>
+
+           <div class="card-grid">
+           <article class="card">
+           <h4>Kelas X</h4>
+           <ul>
+               <li>Logika dan Algoritma</li>
+               <li>Dasar Pemrograman</li>
+               <li>HTML &amp; CSS Dasar</li>
+               <li>Sistem Komputer</li>
+           </ul>
+       </article>
+       <article class="card">
+           <h4>Kelas XI</h4>
+           <ul>
+               <li>Pemrograman Berorientasi Objek</li>
+               <li>Basis Data</li>
+               <li>Pemrograman Web</li>
+               <li>Pemrograman Perangkat Bergerak</li>
+           </ul>
+       </article>
+       <article class="card">
+           <h4>Kelas XII</h4>
+           <ul>
+               <li>Pemrograman Web Lanjut</li>
+               <li>Produk Kreatif dan Kewirausahaan</li>
+               <li>Praktik Kerja Lapangan (PKL)</li>
+               <li>Persiapan Uji Kompetensi</li>
+           </ul>
+       </article>
+       </div>
+
+           <h2 class="sub-judul">Kegiatan Pendukung</h2>
+           <div class="card-grid">
+           <article class="card">
+           <h4>Praktik Kerja Lapangan</h4>
+           <p>Siswa belajar langsung di dunia usaha dan dunia industri untuk menerapkan keahlian pemrograman.</p>
+       </article>
+       <article class="card">
+           <h4>Uji Kompetensi LSP</h4>
+           <p>Asesmen keahlian lewat portofolio dan praktik untuk memperoleh sertifikat kompetensi.</p>
+       </article>
+       <article class="card">
+           <h4>Projek Akhir</h4>
+           <p>Siswa membuat aplikasi nyata, mulai dari perancangan sampai peluncuran, secara individu atau tim.</p>
+       </article>
+       </div>
+       </section>
+
+       <!-- LAYER 3: KARYA SISWA (Hanya menyisakan judul dan teks pengantar sesuai foto) -->
+       <section class="layer" id="karya-siswa">
+           <h2>Karya Siswa</h2>
+           <p class="intro">Kumpulan aplikasi dan sistem yang dibuat siswa RPL. Ganti gambar dan deskripsi sesuai karya yang sebenarnya.</p>
+       </section>
+
+       <!-- LAYER 4: KONTAK (Hanya Alamat, Kontak, & Jam Pelayanan) -->
+       <section class="layer" id="kontak">
+           <h2>Kontak & Informasi Sekolah</h2>
+           <p class="intro">Informasi alamat, kontak resmi, dan jam pelayanan SMKN 9 Medan.</p>
+
+           <div class="card-grid">
+           <article class="card">
+           <h4>Alamat</h4>
+           <p>Jl. Patriot No. 20 A, Kel. Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20127</p>
+       </article>
+       <article class="card">
+           <h4>Email &amp; Telepon</h4>
+           <p>Email: info@smkn9medan.sch.id<br>Telepon: (061) 845 4350</p>
+       </article>
+       <article class="card">
+           <h4>Jam Pelayanan</h4>
+           <p>Senin - Sabtu: 07.30 - 15.00 WIB</p>
+       </article>
+       </div>
+       </section>
+
+    </main>
+       <!-- WIDGET PROMO KANAN (Dihilangkan di Tablet & Smartphone) -->
+       <aside class="widget-promo">
+           <h3>Info & Promo Lab</h3>
+    <div class="promo-box">
+        <strong>Uji Kompetensi LSP!</strong>
+           <p>Persiapkan portofolio web responsif kalian sebelum jadwal asesmen.</p>
+    </div>
+    </aside>
+       <!-- FOOTER -->
+         <footer class="footer">
+         <p>&copy; 2026 Jurusan RPL SMK Negeri 9 Medan — Modul Pemrograman Web Lanjut</p>
+      </footer>
+    </div>
+
+    <script>
+      var header = document.getElementById('header');
+      var layers = document.querySelectorAll('.layer');
+      var links  = document.querySelectorAll('.nav-links a');
+
+      // Menampilkan satu layer, menyembunyikan yang lain
+      function tampil(id) {
+        if (!document.getElementById(id)) { id = 'beranda'; }
+        layers.forEach(function (l) { l.classList.toggle('aktif', l.id === id); });
+        links.forEach(function (a) { a.classList.toggle('aktif', a.getAttribute('href') === '#' + id); });
+        header.classList.remove('menu-buka');
+        window.scrollTo(0, 0);
+      }
+
+      window.addEventListener('hashchange', function () { tampil(location.hash.slice(1)); });
+      tampil(location.hash.slice(1));
+
+      // Tombol hamburger (ponsel)
+      document.getElementById('tombolMenu').addEventListener('click', function () {
+        header.classList.toggle('menu-buka');
+      });
+
+      // ===== CHATBOT =====
+      var SEKOLAH = {
+        nama: 'SMK Negeri 9 Medan',
+        npsn: '10210766',
+        alamat: 'Jl. Patriot No. 20 A, Kelurahan Lalang, Kecamatan Medan Sunggal, Kota Medan, Sumatera Utara 20127',
+        telepon: '(061) 845 4350',
+        hpLsp: '0813 7022 2291',
+        website: 'smkn9medan.sch.id',
+        akreditasi: 'A',
+        kepsek: 'M Sofa Ananda',
+        jumlahGuru: '98',
+        ruangKelas: '62',
+        labKomputer: '14',
+        kaprodiRpl: '(isi nama kepala program keahlian RPL di sini)'
+      };
+
+      var DATA_GURU = [];
+      var CATATAN = 'Data ini berasal dari sumber publik dan bisa berubah, jadi mohon konfirmasi ke sekolah langsung.';
+
+      var DATA_BOT = [
+        { kata: ['bantuan', 'help', 'menu', 'topik', 'bisa tanya', 'apa saja yang bisa'],
+          jawab: 'Kamu bisa bertanya tentang:\n- Profil dan akreditasi sekolah\n- Jurusan (TKJ, RPL, Animasi, Peksos, DKV, PSPT)\n- Guru dan kepala sekolah\n- Fasilitas lab\n- Alamat, kontak, dan jam pelayanan' },
+
+        { kata: ['siapa kamu', 'kamu siapa', 'kamu apa', 'chatbot', 'bot', 'asisten'],
+          jawab: 'Saya chatbot berbasis kata kunci untuk Portal RPL SMKN 9 Medan.' },
+
+        { kata: ['rpl', 'rekayasa perangkat lunak', 'coding', 'programmer', 'software'],
+          jawab: 'RPL mempelajari pembuatan aplikasi, web, dan basis data.' },
+
+        { kata: ['tkj', 'teknik komputer dan jaringan', 'jaringan'],
+          jawab: 'Teknik Komputer dan Jaringan (TKJ) mempelajari hardware dan administrasi jaringan.' },
+
+        { kata: ['animasi'],
+          jawab: 'Jurusan Animasi mempelajari pembuatan film animasi 2D/3D dan visual effect.' },
+
+        { kata: ['peksos', 'pekerjaan sosial'],
+          jawab: 'Peksos mempelajari pelayanan sosial dan pendampingan masyarakat.' },
+
+        { kata: ['dkv', 'desain komunikasi visual', 'desain grafis', 'multimedia'],
+          jawab: 'Desain Komunikasi Visual (DKV) mempelajari seni rupa, desain grafis, dan fotografi.' },
+
+        { kata: ['pspt', 'produksi dan siaran program televisi', 'televisi'],
+          jawab: 'PSPT mempelajari teknik penyiaran, produksi video, dan editing program televisi.' },
+
+        { kata: ['jurusan', 'kompetensi keahlian'],
+          jawab: 'Pilihan jurusan di SMKN 9 Medan: TKJ, RPL, Animasi, Peksos, DKV, dan PSPT.' },
+
+        { kata: ['alamat', 'lokasi', 'dimana', 'jalan'],
+          jawab: SEKOLAH.nama + ' beralamat di ' + SEKOLAH.alamat + '.' },
+
+        { kata: ['kontak', 'hubungi', 'telepon', 'email'],
+          jawab: 'Telepon sekolah: ' + SEKOLAH.telepon + '. Website: ' + SEKOLAH.website + '.' }
+      ];
+
+      var JAWAB_DEFAULT = 'Maaf, saya belum punya jawaban untuk itu. Coba tanyakan seputar jurusan, alamat, atau jam pelayanan.';
+      var SARAN = ['Jurusan', 'Alamat', 'LSP', 'Kontak'];
+
+      var kotakPesan = document.getElementById('chatPesan');
+      var kotakSaran = document.getElementById('chatSaran');
+      var formChat   = document.getElementById('chatForm');
+      var inputChat  = document.getElementById('chatInput');
+
+      function tambahPesan(teks, pengirim) {
+        var el = document.createElement('div');
+        el.className = 'chat-gelembung ' + pengirim;
+        el.textContent = teks;
+        kotakPesan.appendChild(el);
+        kotakPesan.scrollTop = kotakPesan.scrollHeight;
+      }
+
+      function normal(t) {
+        return t.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+      }
+
+      function cocok(kata, teks, daftarKata) {
+        if (kata.indexOf(' ') > -1) { return teks.indexOf(kata) > -1; }
+        return daftarKata.some(function (w) {
+          return w === kata || (kata.length >= 5 && w.indexOf(kata) > -1);
+        });
+      }
+
+      function cariJawaban(pertanyaan) {
+        var teks = normal(pertanyaan);
+        var daftarKata = teks.split(' ');
+        var terbaik = null;
+        var skorTerbaik = 0;
+        DATA_BOT.forEach(function (item) {
+          var skor = 0;
+          item.kata.forEach(function (k) {
+            if (cocok(k, teks, daftarKata)) { skor += (k.indexOf(' ') > -1 ? 2 : 1); }
+          });
+          if (skor > skorTerbaik) { skorTerbaik = skor; terbaik = item; }
+        });
+        return terbaik ? terbaik.jawab : JAWAB_DEFAULT;
+      }
+
+      function kirim(pertanyaan) {
+        pertanyaan = pertanyaan.trim().slice(0, 200);
+        if (!pertanyaan) { return; }
+        tambahPesan(pertanyaan, 'user');
+        setTimeout(function () { tambahPesan(cariJawaban(pertanyaan), 'bot'); }, 350);
+      }
+
+      formChat.addEventListener('submit', function (e) {
+        e.preventDefault();
+        kirim(inputChat.value);
+        inputChat.value = '';
+      });
+
+      SARAN.forEach(function (s) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = s;
+        b.addEventListener('click', function () { kirim(s); });
+        kotakSaran.appendChild(b);
+      });
+
+      tambahPesan('Halo! Saya asisten SMKN 9 Medan. Tanyakan seputar sekolah, jurusan, atau alamat. Pilih topik di bawah atau ketik pertanyaanmu.', 'bot');
+    </script>
+</body>
+</html>
